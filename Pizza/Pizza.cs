@@ -1,9 +1,9 @@
-﻿using BuilderPattern.Enums;
+﻿using Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BuilderPattern.Pizza
+namespace Pizza
 {
     public class Pizza
     {
@@ -11,10 +11,10 @@ namespace BuilderPattern.Pizza
         {
 
         }
-        public PizzaType PizzaType { get; set; }
-        public bool ExtraCheese { get; set; }
-        public ExtraIngredient ExtraIngredient { get; set; }
-        public PizzaCrust PizzaCrust { get; set; }
+        public PizzaType PizzaType { get; protected internal set; }
+        public bool ExtraCheese { get; protected internal set; }
+        public ExtraIngredient ExtraIngredient { get; protected internal set; }
+        public PizzaCrust PizzaCrust { get; protected internal set; }
 
         public override string ToString()
         {

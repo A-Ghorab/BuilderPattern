@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BuilderPattern.Enums
+namespace Enums
 {
     public enum PizzaType
     {

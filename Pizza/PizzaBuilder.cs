@@ -1,9 +1,9 @@
-﻿using BuilderPattern.Enums;
+﻿using Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BuilderPattern.Pizza
+namespace Pizza
 {
     public class PizzaBuilder
     {
