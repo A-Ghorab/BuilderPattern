@@ -32,11 +32,22 @@ namespace Pizza
 
         public Pizza Build()
         {
+            //All Validation Go Here
+
             //we can Check Extra Cheese can't be added with Pizza Type Cheese
             if (pizza.PizzaType == PizzaType.Cheese && pizza.ExtraCheese)
                 throw new InvalidOperationException("No Extra Cheese with Cheese");
 
-            return pizza;
+            //Return Finished Pizza
+            return new Pizza
+            {
+                PizzaType = pizza.PizzaType,
+                ExtraCheese = pizza.ExtraCheese,
+                ExtraIngredient = pizza.ExtraIngredient,
+                PizzaCrust = pizza.PizzaCrust
+            };
+            
+            
         }
         
     }
