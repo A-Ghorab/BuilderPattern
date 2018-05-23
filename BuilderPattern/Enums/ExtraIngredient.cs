@@ -6,6 +6,7 @@ namespace BuilderPattern.Enums
 {
     public enum ExtraIngredient
     {
+        None,
         Peperoni,
         Meat ,
         Chicken

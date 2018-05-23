@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuilderPattern.Pizza;
+using System;
 
 namespace BuilderPattern
 {
@@ -7,15 +8,14 @@ namespace BuilderPattern
         static void Main(string[] args)
         {
             //Lets clean the Code a little bit 
+            var PizzaBuilder = new PizzaBuilder(Enums.PizzaType.Meat);
+            PizzaBuilder.ExtraCheese(true);
+            PizzaBuilder.ExtraIngredient(Enums.ExtraIngredient.Meat);
+            PizzaBuilder.PizzaCrust(Enums.PizzaCrust.Normal);
 
-            Pizza pizza = new Pizza(Enums.PizzaType.Meat)
-            {
-                ExtraCheese = true,
-                ExtraIngredient = Enums.ExtraIngredient.Peperoni,
-                PizzaCrust = Enums.PizzaCrust.Stuffed
-            };
+   
 
-            Console.WriteLine(pizza);
+            Console.WriteLine(PizzaBuilder.Build());
         }
     }
 }
