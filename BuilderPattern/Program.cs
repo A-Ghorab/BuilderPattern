@@ -6,7 +6,16 @@ namespace BuilderPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new Pizza(Enums.PizzaType.Meat, true, Enums.ExtraIngredient.Peperoni, Enums.PizzaCrust.Stuffed));
+            //Lets clean the Code a little bit 
+
+            Pizza pizza = new Pizza(Enums.PizzaType.Meat)
+            {
+                ExtraCheese = true,
+                ExtraIngredient = Enums.ExtraIngredient.Peperoni,
+                PizzaCrust = Enums.PizzaCrust.Stuffed
+            };
+
+            Console.WriteLine(pizza);
         }
     }
 }

@@ -7,12 +7,9 @@ namespace BuilderPattern
 {
     public class Pizza
     {
-        public Pizza(PizzaType pizzaType, bool extraCheese, ExtraIngredient? extraIngredient, PizzaCrust pizzaCrust)
+        public Pizza(PizzaType pizzaType)
         {
             PizzaType = pizzaType;
-            ExtraCheese = extraCheese;
-            ExtraIngredient = extraIngredient;
-            PizzaCrust = pizzaCrust;
         }
 
         public PizzaType PizzaType { get; set; }
