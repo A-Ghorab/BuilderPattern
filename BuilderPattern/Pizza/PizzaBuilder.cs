@@ -14,17 +14,20 @@ namespace BuilderPattern.Pizza
             pizza.PizzaType = pizzaType;
         }
 
-        public void ExtraCheese(bool extraCheese)
+        public PizzaBuilder ExtraCheese(bool extraCheese)
         {
             pizza.ExtraCheese = extraCheese;
+            return this;
         }
-        public void ExtraIngredient (ExtraIngredient extraIngredient)
+        public PizzaBuilder ExtraIngredient (ExtraIngredient extraIngredient)
         {
             pizza.ExtraIngredient = extraIngredient;
+            return this;
         }
-        public void PizzaCrust (PizzaCrust pizzaCrust)
+        public PizzaBuilder PizzaCrust (PizzaCrust pizzaCrust)
         {
             pizza.PizzaCrust = pizzaCrust;
+            return this;
         }
 
         public Pizza Build()

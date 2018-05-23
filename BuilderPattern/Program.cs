@@ -9,9 +9,9 @@ namespace BuilderPattern
         {
             //Lets clean the Code a little bit 
             var PizzaBuilder = new PizzaBuilder(Enums.PizzaType.Meat);
-            PizzaBuilder.ExtraCheese(true);
-            PizzaBuilder.ExtraIngredient(Enums.ExtraIngredient.Meat);
-            PizzaBuilder.PizzaCrust(Enums.PizzaCrust.Normal);
+            PizzaBuilder.ExtraCheese(true)
+                        .ExtraIngredient(Enums.ExtraIngredient.Meat)
+                        .PizzaCrust(Enums.PizzaCrust.Normal);
 
    
 
